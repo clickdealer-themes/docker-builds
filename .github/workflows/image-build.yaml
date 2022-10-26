@@ -11,7 +11,7 @@ jobs:
       id-token: write
       contents: read
     steps:
-    
+
     - name: Checkout
       uses: actions/checkout@v3
 
@@ -31,6 +31,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v3
       with:
+        context: .
         registry: gchr.io
         push: true
         tags: rclone-docker:latest
