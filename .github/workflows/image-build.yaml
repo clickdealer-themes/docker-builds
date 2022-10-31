@@ -34,4 +34,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ghcr.io/click-dealer-themes/rclone-docker:latest
+        tags: ghcr.io/clickdealer-themes/rclone-docker:latest
