@@ -60,3 +60,4 @@ jobs:
       with:
         push: true
         context: .
+        tags: 353817990488.dkr.ecr.eu-west-2.amazonaws.com/clickdealer-themes/rclone-conf:latest
