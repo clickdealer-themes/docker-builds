@@ -41,6 +41,12 @@ jobs:
       env:
         AWS_REGION: eu-west-2
 
+    - name: Docker meta
+      id: docker_meta
+      uses: crazy-max/ghaction-docker-meta@v1
+      with:
+        images: ${{ steps.login-ecr.outputs.registry }}/rclone-docker:latest
+
     - name: Build and push
       id: docker_build
       uses: docker/build-push-action@v2
